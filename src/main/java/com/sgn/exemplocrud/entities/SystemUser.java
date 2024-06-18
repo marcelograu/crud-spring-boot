@@ -12,12 +12,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "system_user")
+@Table(name = "systemuser")
 public class SystemUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+    @Column(name = "userid")
     private Integer id;
 
     @Column(name = "name")
@@ -26,10 +26,10 @@ public class SystemUser {
     @Column(name = "role")
     private UserRole role;
 
-    @Column(name = "pass_word")
+    @Column(name = "password")
     private String passWord;
 
-    @Column(name = "creation_date")
+    @Column(name = "creationdate")
     private LocalDate creationDate;
 
     public SystemUser() {
